@@ -23,8 +23,8 @@ li {
 li:hover {
     
     border: 1px solid #d4d4d4;
-    background-color: white
-    cursor pointer;
+    background-color: white;
+    cursor: pointer;
 }
 
 li:first-child {
