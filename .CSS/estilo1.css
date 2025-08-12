@@ -1,4 +1,4 @@
-body { 
+body {
     font: 100% Lucida Sans, Verdana;
     margin: 20px;
     line-height: 26px;
@@ -8,35 +8,36 @@ body {
     background-color: #04AA6D;
     color: #ffffff;
     padding: 15px;
- }
+}
 
-#top h1, #top p, ul {
-    border-radius: 4px;
-    margin: 4px;
+#top h1,
+#top p,
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 li {
     list-style-type: none;
-    
+    background-color: #f1f1f1;
+    border: 1px solid #d4d4d4;
+    cursor: pointer;
+    margin: 4px;
 }
 
 li:hover {
-    
-    border: 1px solid #d4d4d4;
     background-color: white;
-    cursor: pointer;
+
 }
 
 li:first-child {
     background-color: #04AA6D;
     color: white;
-   
+    font-weight: bold;
 }
 
 ul {
-    
     float: left;
-    font-weight: bold;
     width: 200px;
 }
 
@@ -47,88 +48,47 @@ ul {
 
 #sidebar {
     background-color: #32a4e7;
-    position: aboslute;
+    position: absolute;
     color: #ffffff;
     width: 180px;
     bottom: 0;
     top: 0;
     right: 0;
+    margin: 4px 0px;
+    padding: 10px;
 }
 
 .wrapper {
     position: relative;
-    overflow: auto;
 }
 
 #bottom {
-    border: 1px solid #d4d4d4;
     background-color: #f1f1f1;
     text-align: center;
     padding: 10px;
     font-size: 70%;
     line-height: 14px;
-}
-
-#top, li, #sidebar, #bottom {
     border-radius: 4px;
-    margin: 4px;
+    padding: 10px 20px;
 }
 
-a{
+#top,
+li,
+#sidebar,
+#bottom {
+    border-radius: 4px;
+}
+
+a {
     color: #000000;
     text-decoration: underline;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
 }
 
-#bottom p{
-    
+#bottom p {
+
+    margin: 0px;
 }
-
-/*
-background-color: #04AA6D;
-background-color: #04AA6D;
-background-color: #32a4e7;
-background-color: #f1f1f1;
-background-color: #f1f1f1;
-background-color: #ffffff;
-border: 1px solid #d4d4d4;
-border: 1px solid #d4d4d4;
-
-border-radius: 4px;
-bottom: 0;
-color: #ffffff;
-color: #ffffff;
-color: black;
-color: white;
-cursor: pointer;
-float: left;
-font: 100% "Lucida Sans", Verdana;
-font-size: 70%;
-font-weight: bold;
-line-height: 14px;
-line-height: 26px;
-list-style-type: none;
-margin: 0 210px;
-margin: 0;
-margin: 0px;
-margin: 20px;
-margin: 4px 0px;
-margin: 4px;
-padding: 0;
-padding: 10px 20px;
-padding: 10px;
-padding: 10px;
-padding: 15px;
-position: absolute;
-position: relative;
-right: 0;
-text-align: center;
-text-decoration: none;
-text-decoration: underline;
-top: 0;
-width: 180px;
-width: 200px;
-*/
