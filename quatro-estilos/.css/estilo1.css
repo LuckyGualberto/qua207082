@@ -18,17 +18,7 @@ ul {
 }
 
 li {
-    background-color: #d4d4d4;
-    border: 1px solid #d4d4d4;
     list-style-type: none;
-<<<<<<< HEAD
-    border-radius: 4px;
-    font-weight: bold;
-}
-
-li:hover {
-    background-color: white; 
-=======
     background-color: #f1f1f1;
     border: 1px solid #d4d4d4;
     cursor: pointer;
@@ -38,7 +28,6 @@ li:hover {
 li:hover {
     background-color: white;
 
->>>>>>> secundaria
 }
 
 li:first-child {
@@ -74,18 +63,11 @@ ul {
 }
 
 #bottom {
-<<<<<<< HEAD
-    font-size: 70%;
-}
-
-#top, li, #sidebar, #bottom {
-=======
     background-color: #f1f1f1;
     text-align: center;
     padding: 10px;
     font-size: 70%;
     line-height: 14px;
->>>>>>> secundaria
     border-radius: 4px;
     padding: 10px 20px;
 }
@@ -106,62 +88,7 @@ a:hover {
     text-decoration: none;
 }
 
-<<<<<<< HEAD
-#bottom p{
-    border: 1px solid #d4d4d4;
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 10px;
-    line-height: 14px;
-}
-
-/*
-
-background-color: #04AA6D;
-background-color: #32a4e7;
-
-background-color: #f1f1f1;
-background-color: #ffffff;
-border: 1px solid #d4d4d4;
-border: 1px solid #d4d4d4;
-
-
-bottom: 0;
-color: #ffffff;
-color: #ffffff;
-color: black;
-color: white;
-cursor: pointer;
-float: left;
-font: 100% "Lucida Sans", Verdana;
-font-size: 70%;
-font-weight: bold;
-line-height: 14px;
-line-height: 26px;
-list-style-type: none;
-margin: 0 210px;
-margin: 0;
-margin: 0px;
-margin: 20px;
-margin: 4px 0px;
-margin: 4px;
-padding: 0;
-padding: 10px 20px;
-padding: 10px;
-padding: 10px;
-padding: 15px;
-position: relative;
-right: 0;
-text-align: center;
-text-decoration: none;
-text-decoration: underline;
-top: 0;
-width: 180px;
-width: 200px;
-*/
-=======
 #bottom p {
 
     margin: 0px;
 }
->>>>>>> secundaria
