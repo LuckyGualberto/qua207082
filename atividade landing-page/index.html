@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="imagem-css/Design-Front-End-L2K-Internet.webp">
+    <title>Landing Page versão 2.0</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d8cfcf;
+            color: black;
+            padding: 50px;
+        }
+
+        #principal {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 100px auto;
+        }
+
+        #apresentacao {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        iframe {
+            display: flex;
+            position: absolute;
+            top: 20px;
+            right: 150px;
+        }
+
+        #botão {
+            margin-top: 20px;
+            border: none;
+            padding: 10px 20px;
+            background-color: rgb(235, 100, 23);
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            height: 50px;
+            width: 200px;
+        }
+
+        #botão:hover {
+            background-color: rgb(200, 80, 20);
+        }
+
+        .carrossel {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            /* rolagem lateral */
+            scroll-snap-type: x mandatory;
+            /* "encaixa" os itens */
+            padding: 20px;
+        }
+
+        .item {
+            flex: 0 0 auto;
+            /* impede que o item quebre para outra linha */
+            width: 200px;
+            height: 120px;
+            background: #ddd;
+            border-radius: 10px;
+            scroll-snap-align: start;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* barra de rolagem mais discreta */
+        .carrossel::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .carrossel::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="principal">
+       <div id="apresentacao"> 
+        <h1>Bem-vindo ao curso de Front-End!</h1><br>
+        <p>Aprenda a criar páginas web modernas e responsivas.</p><br>
+       </div> 
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iSqf2iPqJNM?si=CjMPXQn-IYsgXfGm"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            <button id="botão">Inscreva-se</button>
+        </div>
+    </div>
+    <div class="carrossel">
+        <div class="item">Opção 1</div>
+        <div class="item">Opção 2</div>
+        <div class="item">Opção 3</div>
+        <div class="item">Opção 4</div>
+        <div class="item">Opção 5</div>
+    </div>
+</body>
+
+</html>
+
+
+<!--background-color: rgb(235, 100, 23)
