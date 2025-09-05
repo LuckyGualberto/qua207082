@@ -9,9 +9,9 @@ const resp2 = document.querySelector("#Tipo")
 frm.addEventListener("submit", (e) =>{
     e.preventDefault()
 
-    const lado1 = frm.LadoA.value
-    const lado2 = frm.LadoB.value
-    const lado3 = frm.LadoC.value
+    const lado1 = Number(frm.LadoA.value)
+    const lado2 = Number (frm.LadoB.value)
+    const lado3 = Number (frm.LadoC.value)
     
 
     if (lado1 > lado2 + lado3 || lado2 > lado1+lado3 || lado3> lado1+lado2){
