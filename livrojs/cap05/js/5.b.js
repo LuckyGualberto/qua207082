@@ -10,7 +10,7 @@ frm.addEventListener("submit", (e) =>{
 
     let resposta = ""
     for (let i = 1; i <= ano; i++){
-        resposta =  resposta + `${i}º ano: ${numero  * (3 ** i)}  \n`  
+        resposta =  resposta + `${i}º ano: ${numero  * (3 ** (i-1))}  \n`  
     }
     resp.innerText = resposta
 })
