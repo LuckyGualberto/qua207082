@@ -10,7 +10,7 @@ frm.addEventListener("submit", (e) => {
     pacientes.push(nome)
     let lista = ""
     // for "tradicional" (inicia em 0 , enquanto menor que tamanho do vetor)
-    for(let i = 0; i < pacientes.length; i++){
+    for(let i = 0;  acientes.length; i++){
         lista += `${i+1}. ${pacientes[i]}\n`
     }
     respLista.innerText = lista // exibe a lista de pacientes na página
