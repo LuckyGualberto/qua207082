@@ -1,79 +1,38 @@
 const frm = document.querySelector("form")
-const resp1 = document.querySelector("#numero")
-const resp2 = document.querySelector("#texto")
-const numeros = []
+const resp1 = document.querySelector("#outResp1")
+const resp2 = document.querySelector("#outResp2")
 
-frm.addEventListener ("submit", (e)=>{
+const numeros = []
+frm.addEventListener("submit",(e) => {
     e.preventDefault()
-    const numero = frm.inNumero.value
-    if(numeros.includes(numero)== true){
+    const num = frm.inNumero.value
+    if(numeros.includes(num) == true){
         alert("Número repetido")
         return
     }
-    numeros.push(numero)
+    numeros.push(num)
     resp1.innerText = "Numeros: "+numeros.join(", ")
-    frm.inNumero.value =""
+    frm.inNumero.value = ""
     frm.inNumero.focus()
-    
+    /*
+    resp1.innerText = "Numeros: "+numeros[0]
+    for (let i = 1; i < numeros.length; i++) {
+        resp1.innerText += ", "+numeros[i]
+    }
+    */
 })
 
-frm.btVerifica.addEventListener("click", ()=>{
+frm.btVerificar.addEventListener("click", () => {
     let ordem = true
-    for(let i = 1;i < numeros.length; i++)
-
-        if(numeros[i-1]> numeros [i]){
+    for(let i = 1; i < numeros.length; i++){
+        if(numeros[i-1] > numeros[i]){
             ordem = false
             break
         }
-        if(ordem){
-            resp2.innerText = `Os números estão em ordem crescente`
-        }else{
-            resp2.innerText= `Ateção... Os números não estão em ordem crescente`
-        }
-    })
-    
-
-   
-
-    
-    
-
-   
-    
-
-
-
-
-
-
-
-
-
-/*if(b.numero <= a.numero){
-        resp2.innertext = `<p style = "font-family: italic, Arial; color: blue;"> Atenção ... Números não estão em ordem crescente</p>`
+    }
+    if(ordem){
+        resp2.innerText = "Os números estão em ordem crescente"
     }else{
-        resp2.innerText = `Números em ordem crescente`
-    }  
-      
-    
-
-
-
-
-
-    const copia = [... numeros]
-
-    copia.sort((a,b) => a.numero - b.numero) 
-
-    let resumo = ""
-
-    let aux = copia[0].numero
-
-    let resposta =+ copia
-    
-    
-    
-    
-    
-    
-    */
+        resp2.innerText = "Os números NÃO estão em ordem crescente"
+    }
+})
