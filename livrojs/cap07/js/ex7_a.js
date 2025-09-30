@@ -12,7 +12,7 @@ frm.addEventListener("submit", (e)=>{
     for(let i = 0; i < tam ; i++){
        if(i % 2 == 0){
             par += palavra[i+1]
-       }else{
+       }if (i % 2 !== 0){
             impar += palavra[i+1]
        }
     }
