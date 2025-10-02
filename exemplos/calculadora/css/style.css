@@ -19,3 +19,32 @@ body{
     margin: 0;
     background-color: #f0f0f0;
 }
+#visor{
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 5px;
+    background-color: #eee;
+    border: none;
+}
+
+button{
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: #4f8051;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3;
+}
+button:hover{
+    background-color: #4CAF50;
+}
+.operador{
+    background-color: #f44336;
+}
+.operador:hover{
+    background-color: #cd5850;
+}
