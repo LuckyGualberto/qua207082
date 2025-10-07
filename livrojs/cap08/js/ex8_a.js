@@ -1,16 +1,29 @@
 const frm = document.querySelector("form")
 const resp = document.querySelector("pre")
-const nome = frm.inNome.value
-const idade = frm.inIdade.value
+
 
 frm.addEventListener("submit", (e)=>{
     e.preventDefault()
-    
-    resp.innerText = `${nome}`
+    const nome = frm.inNome.value
+    const idade = Number(frm.inIdade.value)
+    resp.innerText = nome+"\n"
+    resp.innerText+= retornarTracos(nome) + "\n"
+    resp.innerText += "Categoria: " + categorizarAluno(idade)
 })
 
-function retornarTracos(){
-    tracos = ""
-    let i
+function retornarTracos(nome){
+    let retorno = ""
+    for(const letra of nome){
+        if(letra != " "){
+            retorno += "-"
+        }else{
+            retorno +=" "
+        }
+    }
+    return retorno
+}
+
+function categorizarAluno(idade){
+    return(idade <=12)? "Infantil" : (idade<=17)? "Juvenil" : "Adulto"
 }
 
