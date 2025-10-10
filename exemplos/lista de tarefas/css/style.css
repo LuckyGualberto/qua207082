@@ -1,0 +1,16 @@
+tbody{
+    cursor: pointer;
+}
+
+.bg-em-fila{
+    background-color: rgb(129,169,212);
+}
+
+.bg-iniciado{
+    background-color: #9cefce;
+}
+
+.bg-concluido{
+    background-color: #a081bc;
+}
+

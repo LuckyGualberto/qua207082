@@ -30,6 +30,12 @@ frm.btApagar.addEventListener("click", ()=>{
     atualizarTabela()
 })
 
+const cores = {
+    "Em Fila":"bg-em-fila",
+    "Iniciado": "bg-inicado",
+    "Concluído":"bg-concluido"
+}
+
 function atualizarTabela(){
     limpar()
     localStorage.setItem("lsItem", JSON.stringify(lsItem))
@@ -37,7 +43,8 @@ function atualizarTabela(){
     let cont = 0
     for(i of lsItem){
         if(filtro ==""|| filtro.includes(i.status)){
-        tbody.innerHTML += `<tr onclick="prepararEdicao(${cont})"><td>${i.item}</td><td>${i.status}</td></tr> `
+        tbody.innerHTML += `<tr onclick="prepararEdicao(${cont})">
+        <td class="${cores[i.status]}">${i.item}</td><td>${i.status}</td></tr> `
         }
         cont ++
     }  
