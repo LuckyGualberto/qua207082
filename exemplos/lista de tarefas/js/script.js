@@ -31,9 +31,9 @@ frm.btApagar.addEventListener("click", ()=>{
 })
 
 const cores = {
-    "Em Fila":"bg-em-fila",
-    "Iniciado": "bg-inicado",
-    "Concluído":"bg-concluido"
+    "Em Fila":"bg-secondary-subtle",
+    "Iniciado": "bg-primary-subtle",
+    "Concluído":"bg-danger-subtle"
 }
 
 function atualizarTabela(){
