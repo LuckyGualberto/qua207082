@@ -1,0 +1,56 @@
+const lsProdutos = [
+    {
+        nome: "Banho de Mar",
+        descricao: "vela aromática - 300g",
+        img: "img/vela-01.png",
+        valor: 39
+    },
+    {
+        nome: "Passeio na Floresta",
+        descricao: "vela aromática - 300g",
+        img: "img/vela-02.png",
+        valor: 44
+    },
+    {
+        nome: "Meus Cristais",
+        descricao: "vela aromática - 300g",
+        img: "img/vela-03.png",
+        valor: 49
+    },
+    {
+        nome: "Vida no Campo",
+        descricao: "vela aromática - 300g",
+        img: "img/vela-04.png",
+        valor: 54
+    },
+    {
+        nome: "Meu Momento",
+        descricao: "vela aromática - 300g",
+        img: "img/vela-05.png",
+        valor: 54
+    },
+    {
+        nome: "Floresta Viva",
+        descricao: "vela aromática - 300g",
+        img: "img/vela-06.png",
+        valor: 57
+    },
+    {
+        nome: "Vida no Campo",
+        descricao: "vela aromática - 300g",
+        img: "img/vela-07.png",
+        valor: 59
+    },
+    {
+        nome: "meu Momento",
+        descricao: "vela aromática - 300g",
+        img: "img/vela-08.png",
+        valor: 59
+    },
+    {
+        nome: "Flores Vivas",
+        descricao: "vela aromática - 300g",
+        img: "img/vela-09.png",
+        valor: 59
+    }
+]
