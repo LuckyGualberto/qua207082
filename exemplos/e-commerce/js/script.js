@@ -95,5 +95,9 @@ frm.addEventListener("submit", (e) =>{
     let msg = "Desejo fazer o seguinte pedido:\n"
     msg+= pedido
     msg+=`Att: ${nome}`
-    alert(msg)
+    if(confirm("Deseja enviar essa mensagem?|n"+msg)){
+        msg = encodeURI(msg)
+        const link = `https://wa.me/5561995831469?text=${msg}`
+        window.open(link, '_blank')
+    }
 })
